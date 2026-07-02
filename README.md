@@ -4,7 +4,16 @@ i created a ai that can answer questions on physics and a few other sciences
 ## The Algorithmgineering
 this ai is a chatbot spefically designed for physics and other sciences i gave it multiple pages on chemistry nuclear physics rocket science engineering photons electro magentism and plasma phyisics
 ## Running this project
-for recreating this project use these sources in ollama for knowledge
+for recreating this project use these sources in ollama for knowledge these are the links i used
+https://en.wikipedia.org/wiki/Quantum_mechanics
+https://en.wikipedia.org/wiki/Antimatter
+https://en.wikipedia.org/wiki/Chemistry
+https://en.wikipedia.org/wiki/Nuclear_physics
+https://en.wikipedia.org/wiki/Engineering
+https://en.wikipedia.org/wiki/Photon
+https://en.wikipedia.org/wiki/Electromagnetism
+https://en.wikipedia.org/wiki/Outline_of_physics
+https://en.wikipedia.org/wiki/Plasma_(physics)
 
 ## how to set it up
 Ollama is a Large Language Model (LLM) chatbot. It works similarly to ChatGPT. You can ask it questions and it will give you answers.
@@ -23,10 +32,9 @@ SSH into your Orin.
 2
 If you haven't done so yet, run this to install jetson-containers:
 
-
+3
 git clone https://github.com/dusty-nv/jetson-containers
 bash jetson-containers/install.sh
-3
 Run the command below to install Ollama base with the Open WebUI tool:
 
 
@@ -40,9 +48,8 @@ This process is about 7 GB for the container image. It will take awhile to downl
 4
 Run and install Ollama.
 
-
-jetson-containers run --name ollama $(autotag ollama)
 5
+jetson-containers run --name ollama $(autotag ollama)
 When prompted press, Y to continue.
 
 
@@ -71,7 +78,7 @@ Talk to Ollama. Send it a message and it should reply.
 
 
 
-💡 Forwarded Ports
+ Forwarded Ports
 
 You can stop Ollama by using Ctrl + D or /bye, and that will exit it. You'll need to use Ctrl + D once more to exit the Docker container as well.
 
@@ -97,8 +104,6 @@ Press Enter to navigate to the URL.
 5
 If you see a security warning, ignore it and click Continue to site.
 
-This isn't a problem, as the site is only running over your local network or hotspot.
-
 Once you're loaded in, you should see a big webpage with changing text and Get Started towards the bottom of the webpage.
 
 6
@@ -112,12 +117,3 @@ This page will ask you to log in. The account you create is only stored locally.
 You can put in whatever you want to. You'll create new credentials when you reconnect. This information won't be saved anywhere but locally, so it isn't a security concern. It does NOT have to be a real email address or name.
 
 8
-Select Okay, Let's Go!
-
-Dark Mode (Optional)
-
-Now that you've set up WebUI, it's time to explore Ollama within it.
-1
-Make sure llama3:latest is the correct selected model.
-
-You can change which model you're using with the drop-down menu at the top left of the window
